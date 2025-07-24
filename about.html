@@ -1,5 +1,4 @@
-
-  <!DOCTYPE html>
+<!DOCTYPE html>
   <html lang="en">
   <head>
       <meta charset="UTF-8">
@@ -21,9 +20,11 @@
             <img class="logo" src="img/logo_large.png" alt="Logo">
             <p>BluEclipse</p>
           </div>
+          <!-- Burger only visible on mobile -->
           <div class="mobile-burger">
-            <button id="burger-icon">&#9776;</button>
+            <span onclick="openNav()">&#9776;</span>
           </div>
+          <!-- Desktop nav only visible on larger screens -->
           <div class="navigation desktop-nav">
             <nav>
               <a href="index.html"><button class="nav_btn">Home</button></a>
@@ -31,6 +32,16 @@
               <a href="about.html"><button class="nav_btn">Products</button></a>
               <a href="about.html#contact"><button class="nav_btn">Contact</button></a>
             </nav>
+          </div>
+          <!-- Overlay navigation for mobile -->
+          <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+              <a href="index.html"><button class="nav_btn">Home</button></a>
+              <a href="login_signup.html"><button class="nav_btn">Login</button></a>
+              <a href="about.html"><button class="nav_btn">Products</button></a>
+              <a href="about.html#contact"><button class="nav_btn">Contact</button></a>
+            </div>
           </div>
         </header>
         
