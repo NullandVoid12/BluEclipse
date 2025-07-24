@@ -1,5 +1,4 @@
-
-        body {
+body {
 			background-image: url('img/Blue_eclipse_background.png');
 			background-position: top;
             background-repeat: no-repeat;
@@ -1241,3 +1240,22 @@ button {
 .contact-details p {
 	padding: 16px;
 }
+
+@media (max-width: 768px) {
+	.contact-form-container {
+	  width: 90vw !important;
+	  max-width: none !important;
+	  flex-direction: column !important;
+	  gap: 6vw !important;
+	  margin: 40px auto 0 auto !important;
+	  justify-content: flex-start !important;
+	  align-items: stretch !important;
+	  padding-left: 4vw !important;
+	  padding-right: 4vw !important;
+	}
+	.get-in-touch, .contact-details {
+	  width: 100% !important;
+	  margin: 0 !important;
+	  box-sizing: border-box;
+	}
+  }
