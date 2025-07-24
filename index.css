@@ -1,20 +1,20 @@
 body {
 			background-image: url('img/Blue_eclipse_background.png');
 			background-position: top;
-            background-repeat: no-repeat;
-            background-size: contain;
-            color: white; /* Text color is set to white for better visibility against the black background */
-            font-family: Arial, sans-serif;
+			background-repeat: no-repeat;
+			background-size: contain;
+			color: white; /* Text color is set to white for better visibility against the black background */
+			font-family: Arial, sans-serif;
 			max-width: 100vw;
-  			overflow-x: hidden;
+			overflow-x: hidden;
 			
-        }
+		}
 
 		@media (max-width: 768px) {
 			html, body {
 				
 				max-width: 100vw;
-  				overflow-x: hidden;
+				overflow-x: hidden;
 				margin: auto;
 				background-size: 150%;
 			body {
@@ -58,7 +58,7 @@ body {
 				font-size: 4vw;
 			}
 			.landing_text {
-				height: 100vw;
+				height: 130vw;
 			}
 			.logo {
 				width: 6vw;
@@ -80,19 +80,20 @@ body {
 			  }
 
 			  .glow_card body {
-				min-height: 80vh;
-				display: flex;
-				align-items: center;
-				flex-direction: column;
-				padding-top: 2rem;
-				padding-bottom: 2rem;
-				box-sizing: border-box;
-			  }
-			  
-			  .glow_card {
-			
-				background: #0c121f;
-				width: var(--card-width);
+	min-height: unset !important;
+	height: auto !important;
+	padding: 7vw 4vw 7vw 4vw !important;
+	box-sizing: border-box !important;
+	display: flex !important;
+	flex-direction: column !important;
+	justify-content: center !important;
+	align-items: center !important;
+	overflow: visible !important;
+	width: 85vw !important;
+	max-width: 90vw !important;
+	margin-left: 5vw !important;
+	margin-right: 0 !important;
+	border-radius: 18px !important;
 				height: var(--card-height);
 				padding: 3px;
 				position: relative;
@@ -108,6 +109,26 @@ body {
 				cursor;
 				font-family: 'Exo 2', sans-serif;
 			  }
+
+			  .glow_card {
+				margin: 10vh auto 0 auto;
+				padding-bottom: 30vh;
+				background: #0c121f;
+				width: var(--card-width);
+				height: var(--card-height);
+				padding: 3px;
+				position: relative;
+				align-self: center;
+				border-radius: 6px;
+				justify-content: center;
+				align-items: center;
+				text-align: center;
+				display: flex;
+				font-size: 1.5em;
+				color: rgb(88 199 250 / 100%)
+				cursor;
+				font-family: 'Exo 2', sans-serif;
+			}
 			
 						}
 						}
@@ -305,7 +326,7 @@ main {
 }
 
 .landing_text {
-	height: 130vh;
+	height: 80vh;
 }
 
 .typing_wrapper {
@@ -355,44 +376,44 @@ video{
 }
 
 .background-video-container {
-    position: relative;
-    height: 100vh;  /* Adjust this as needed; using 100vh as an example for full screen */
+	position: relative;
+	height: 100vh;  /* Adjust this as needed; using 100vh as an example for full screen */
 	width: 100%;
 	margin-left: 0px;
 	margin-right: 0px;
-    overflow: hidden;
+	overflow: hidden;
 }
 
 .background-video-container::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 0; /* This will place the gradient above the video but below your other content. */
-    background: linear-gradient(to bottom, rgb(12, 18, 31), rgba(12, 18, 31, 0.8) 10%, transparent 50%);
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 0; /* This will place the gradient above the video but below your other content. */
+	background: linear-gradient(to bottom, rgb(12, 18, 31), rgba(12, 18, 31, 0.8) 10%, transparent 50%);
 	background: linear-gradient(to top, rgb(12, 18, 31), rgba(12, 18, 31, 0.8) 10%, transparent 50%);
 }
 
 .background-video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;  
-    opacity: 1;      
-    z-index: -1; 
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;  
+	opacity: 1;      
+	z-index: -1; 
 }
 
 
 .glass-overlay {
 	position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 	background: rgba(0, 0, 0, 0.16);
 	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 	backdrop-filter: blur(8.7px);
@@ -403,47 +424,47 @@ video{
 
 
 .content_main {
-    position: relative; /* Ensures the content stays above the video */
-    z-index: 1;
+	position: relative; /* Ensures the content stays above the video */
+	z-index: 1;
 }
 
 
 button {
 	width: fit-content;
-    position: relative;
-    overflow: hidden;
-    background: transparent;
-    padding: 15px 15px;
-    border-radius: 15px;
-    border: none;
-    font-size: 1rem;
-    color: #e0ffff;
-    font-weight: 500;
-    cursor: pointer;
-    z-index: 1;
+	position: relative;
+	overflow: hidden;
+	background: transparent;
+	padding: 15px 15px;
+	border-radius: 15px;
+	border: none;
+	font-size: 1rem;
+	color: #e0ffff;
+	font-weight: 500;
+	cursor: pointer;
+	z-index: 1;
   }
   button:active{
-    transform: scale(0.95);
+	transform: scale(0.95);
   }
   button::before{
-    content: '';
-    position: absolute;
-    inset: -3px 50px;
-    background: #42455a;
-    transition: inset 350ms ease;
-    z-index: -2;
+	content: '';
+	position: absolute;
+	inset: -3px 50px;
+	background: #42455a;
+	transition: inset 350ms ease;
+	z-index: -2;
   }
   button:hover::before{
-    inset: -20px 0px;
-    background: #00c2cb;
+	inset: -20px 0px;
+	background: #00c2cb;
   }
   button::after{
-    content: '';
-    position: absolute;
-    inset: 3px;
-    border-radius: 10px;
-    background: #22232e;
-    z-index: -1;
+	content: '';
+	position: absolute;
+	inset: 3px;
+	border-radius: 10px;
+	background: #22232e;
+	z-index: -1;
   }
   
 
@@ -452,7 +473,7 @@ button {
 		:root {
 		  --bg: #22232e;
 		  --clr-1: #007ca1;
-		  --clr-2: #2b2dbd;
+		  --clr-2: #2b65bd;
 		  --clr-3: #40d9ff;
 		  --clr-4: #438b85;
 		
@@ -653,96 +674,96 @@ button {
 
 
 .snip1561 {
-    position: relative;
-    overflow: hidden;
-    margin: 10px;
-    min-width: 230px;
-    max-width: 315px;
-    width: 100%;
-    background: #700877;
-    background: -moz-linear-gradient(90deg, #700877 0%, #27a9ff 100%, #2735ff 100%);
-    background: -webkit-linear-gradient(90deg, #700877 0%, #27a9ff 100%, #2735ff 100%);
-    background: linear-gradient(90deg, #700877 0%, #27a9ff 100%, #2735ff 100%);
+	position: relative;
+	overflow: hidden;
+	margin: 10px;
+	min-width: 230px;
+	max-width: 315px;
+	width: 100%;
+	background: #700877;
+	background: -moz-linear-gradient(90deg, #700877 0%, #27a9ff 100%, #2735ff 100%);
+	background: -webkit-linear-gradient(90deg, #700877 0%, #27a9ff 100%, #2735ff 100%);
+	background: linear-gradient(90deg, #700877 0%, #27a9ff 100%, #2735ff 100%);
   }
   
   .snip1561 img,
   .snip1561:before,
   .snip1561:after {
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    -webkit-transition: all 0.4s ease;
-    transition: all 0.4s ease;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-transition: all 0.4s ease;
+	transition: all 0.4s ease;
   }
   
   .snip1561 img {
-    max-width: 100%;
-    backface-visibility: hidden;
-    vertical-align: top;
+	max-width: 100%;
+	backface-visibility: hidden;
+	vertical-align: top;
   }
   
   .snip1561:before,
   .snip1561:after {
-    content: '';
-    background-color: #fff;
-    position: absolute;
-    z-index: 1;
-    top: 50%;
-    left: 50%;
-    opacity: 0;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+	content: '';
+	background-color: #fff;
+	position: absolute;
+	z-index: 1;
+	top: 50%;
+	left: 50%;
+	opacity: 0;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
   }
   
   .snip1561:before {
-    width: 60px;
-    height: 1px;
-    left: 100%;
+	width: 60px;
+	height: 1px;
+	left: 100%;
   }
   
   .snip1561:after {
-    height: 60px;
-    width: 1px;
-    top: 0%;
+	height: 60px;
+	width: 1px;
+	top: 0%;
   }
   
   .snip1561 a {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 1;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 1;
   }
   
   .snip1561:hover img,
   .snip1561.hover img {
-    zoom: 1;
-    filter: alpha(opacity=50);
-    -webkit-opacity: 0.5;
-    opacity: 0.5;
+	zoom: 1;
+	filter: alpha(opacity=50);
+	-webkit-opacity: 0.5;
+	opacity: 0.5;
   }
   
   .snip1561:hover:before,
   .snip1561.hover:before,
   .snip1561:hover:after,
   .snip1561.hover:after {
-    opacity: 1;
-    top: 50%;
-    left: 50%;
+	opacity: 1;
+	top: 50%;
+	left: 50%;
   }
 
 
   
   .service_container{
 	margin-top: 20vh;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;   /* These will center the service_container horizontally */
-    position: relative;
-    display: flex;
-    justify-content: center; /* Changed from space-between to center */
-    flex-wrap: wrap;
-    text-align: center;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;   /* These will center the service_container horizontally */
+	position: relative;
+	display: flex;
+	justify-content: center; /* Changed from space-between to center */
+	flex-wrap: wrap;
+	text-align: center;
 }
   
   .service_container .service_card{
@@ -772,13 +793,13 @@ button {
   .service_container .service_card:hover .face.face1{
 	transform: translateY(0);
 	box-shadow:
-	  inset 0 0 60px rgba(45, 206, 255, 0.603),
-	  inset 20px 0 80px rgb(14, 64, 202),
-	  inset -20px 0 80px rgb(0, 45, 168),
-	  inset 20px 0 300px rgb(0, 45, 168),
+	  inset 0 0 60px rgba(100, 215, 250, 0.603),
+	  inset 20px 0 80px rgb(98, 208, 241),
+	  inset -20px 0 80px rgb(79, 25, 167),
+	  inset 20px 0 300px rgb(63, 36, 161),
 	  inset -20px 0 300px rgb(6, 9, 44),
-	  0 0 50px #ffffffb7,
-	  -10px 0 80px rgb(0, 3, 165),
+	  0 0 50px #00489bb7,
+	  -10px 0 80px rgb(105, 58, 214),
 	  10px 0 80px rgb(6, 9, 44);
 	 
   }
@@ -859,18 +880,18 @@ button {
   }
   
 .myElement:hover {
-    /* other hover styles can be placed here if needed */
+	/* other hover styles can be placed here if needed */
 }
 .myElement:hover.fancy_shadow {
-    box-shadow:
-      inset 0 0 60px whitesmoke,
-      inset 20px 0 80px #0ff,
-      inset -20px 0 80px #0ff,
-      inset 20px 0 300px rgb(0, 68, 255),
-      inset -20px 0 300px rgb(78, 0, 167),
-      0 0 50px #fff,
-      -10px 0 80px rgb(47, 0, 255),
-      10px 0 80px rgb(132, 0, 255);
+	box-shadow:
+	  inset 0 0 60px whitesmoke,
+	  inset 20px 0 80px #0ff,
+	  inset -20px 0 80px #0ff,
+	  inset 20px 0 300px rgb(0, 68, 255),
+	  inset -20px 0 300px rgb(78, 0, 167),
+	  0 0 50px #fff,
+	  -10px 0 80px rgb(47, 0, 255),
+	  10px 0 80px rgb(132, 0, 255);
 }
 
 @media (max-width: 768px) {
@@ -1024,7 +1045,7 @@ button {
   
   .glow_card::before {
 	content: "";
-	width: 100.5%;
+	width: 101%;
 	height: 101%;
 	border-radius: 8px;
 	background-image: linear-gradient(
@@ -1034,7 +1055,7 @@ button {
 	z-index: -1;
 	top: -2px;
 	left: -2px;
-	right: -2px;
+	
   }
   
   .glow_card::after {
@@ -1176,56 +1197,56 @@ button {
 	  }}
 
 .contact-form-container {
-    display: flex;
-    justify-content: space-between;
-    max-width: 800px;
-    margin: 50px auto;
+	display: flex;
+	justify-content: space-between;
+	max-width: 800px;
+	margin: 50px auto;
 	margin-top: 40vh;
 }
 
 .get-in-touch, .contact-details {
 	text-overflow: clip;
-    width: 45%;
-    padding: 20px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+	width: 45%;
+	padding: 20px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 	border-radius: 4px;
 	font-family: 'Exo 2', sans-serif;
 }
 
 .get-in-touch {
-    background-color: #f5f5f500;
+	background-color: #f5f5f500;
 }
 
 .input-field {
-    width: 100%;
-    padding: 10px;
+	width: 100%;
+	padding: 10px;
 	background-color: #ffffff2c;
-    margin-bottom: 10px;
-    border: 1px solid #cccccc98;
-    border-radius: 4px;
-    box-sizing: border-box;
-    outline: none;
+	margin-bottom: 10px;
+	border: 1px solid #cccccc98;
+	border-radius: 4px;
+	box-sizing: border-box;
+	outline: none;
 	color: #eeeeee;
 	font-family: 'Exo 2', sans-serif;
 }
 
 .textarea {
-    height: 100px;
-    resize: none;
+	height: 100px;
+	resize: none;
 }
 
 .get-in-touch button {
-    background-color: #0099ff;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+	background-color: #0099ff;
+	color: white;
+	padding: 10px 15px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
 }
 
 .contact-details {
-    background-color:#212534;
-    color: white;
+	background-color:#212534;
+	color: white;
 	padding: auto;
 	word-wrap: break-word;
   overflow-wrap: break-word;
@@ -1234,7 +1255,7 @@ button {
 }
 
 .icon {
-    margin-right: 10px;
+	margin-right: 10px;
 }
 
 .contact-details p {
@@ -1258,4 +1279,27 @@ button {
 	  margin: 0 !important;
 	  box-sizing: border-box;
 	}
+  }
+
+  ul.product-list li.active-vertical {
+	max-height: none !important;
+	min-height: 50vh !important;
+	overflow: visible !important;
+	box-shadow: none !important;
+	background: #212534 !important;
+	z-index: 2;
+	filter: none !important;
+	/* Remove any inherited background-image or gradient */
+	background-image: none !important;
+  }
+  ul.product-list li article p {
+	position: absolute;
+	bottom: 38px;
+	left: 13px;
+	right: 13px;
+	margin: 0;
+	width: 75vw !important;
+	max-width: 75vw !important;
+	padding-bottom: 10px;
+	background: transparent !important;
   }
