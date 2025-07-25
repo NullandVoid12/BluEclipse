@@ -70,29 +70,11 @@ $(".hover").mouseleave(
 
 function openNav() {
   document.getElementById("myNav").style.width = "100%";
+  document.getElementById("mobile-burger").style.zIndex = "1";
+  document.getElementById("myNav").style.zIndex = "2";
+  
 }
 
 function closeNav() {
   document.getElementById("myNav").style.width = "0%";
 }
-
-// Responsive vertical expand for mobile product list
-function setupMobileProductExpand() {
-  if (window.innerWidth > 768) return;
-  const list = document.querySelector('ul.product-list');
-  if (!list) return;
-  const items = list.querySelectorAll('li');
-  items.forEach((item, idx) => {
-    item.addEventListener('click', function () {
-      items.forEach(i => i.classList.remove('active-vertical'));
-      item.classList.add('active-vertical');
-    });
-  });
-  // Optionally, expand the first item by default
-  if (items.length) items[0].classList.add('active-vertical');
-}
-window.addEventListener('DOMContentLoaded', setupMobileProductExpand);
-window.addEventListener('resize', function() {
-  // Re-setup on resize for responsiveness
-  setupMobileProductExpand();
-});
